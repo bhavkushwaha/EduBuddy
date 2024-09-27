@@ -25,7 +25,7 @@ import { Button } from "@/components/ui/button";
 
 const tools = [
   {
-    label: "Conversation",
+    label: "Doubts Solving",
     icon: MessageSquare,
     color: "text-violet-500",
     bgColor: "bg-violet-500/10",
