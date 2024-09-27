@@ -18,8 +18,8 @@ export const LandingHero = () => {
               strings: [
                 "Conversation",
                 "Flashcards",
-                "Code Generation",
-                "Quiz me",
+                "Coding Assistant",
+                "Quiz Generation",
               ],
               autoStart: true,
               loop: true,

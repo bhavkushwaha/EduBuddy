@@ -22,7 +22,7 @@ import { UserAvatar } from "@/components/user-avatar";
 import { BotAvatar } from "@/components/bot-avatar";
 import { useProModal } from "@/hooks/use-pro-modal";
 
-const ConversationPage = () => {
+const DoubtsSolvePage = () => {
   const router = useRouter();
 
   const proModal = useProModal();
@@ -139,4 +139,4 @@ const ConversationPage = () => {
   );
 };
 
-export default ConversationPage;
+export default DoubtsSolvePage;

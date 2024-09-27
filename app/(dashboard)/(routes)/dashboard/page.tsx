@@ -8,7 +8,7 @@ import {
   Code,
   ImageIcon,
   MessageSquare,
-  Speech,
+  FileQuestion,
 } from "lucide-react";
 
 const tools = [
@@ -20,8 +20,8 @@ const tools = [
     href: "/conversation",
   },
   {
-    label: "Quiz Me",
-    icon: Speech,
+    label: "Quiz Generation",
+    icon: FileQuestion,
     color: "text-emerald-500",
     bgColor: "bg-emerald-500/10",
     href: "/quiz",
@@ -34,7 +34,7 @@ const tools = [
     href: "/flashcards",
   },
   {
-    label: "Code Generation",
+    label: "Coding Assistant",
     icon: Code,
     color: "text-green-700",
     bgColor: "bg-green-700/10",

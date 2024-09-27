@@ -5,7 +5,7 @@ import {
   Code,
   ImageIcon,
   MessageSquare,
-  Speech,
+  FileQuestion,
   Zap,
 } from "lucide-react";
 
@@ -31,8 +31,8 @@ const tools = [
     bgColor: "bg-violet-500/10",
   },
   {
-    label: "Quiz Me",
-    icon: Speech,
+    label: "Quiz Generation",
+    icon: FileQuestion,
     color: "text-emerald-500",
     bgColor: "bg-emerald-500/10",
   },
@@ -43,7 +43,7 @@ const tools = [
     bgColor: "bg-pink-700/10",
   },
   {
-    label: "Code Generation",
+    label: "Coding Assistant",
     icon: Code,
     color: "text-green-700",
     bgColor: "bg-green-700/10",

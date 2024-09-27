@@ -7,10 +7,10 @@ import { Montserrat } from "next/font/google";
 import { cn } from "@/lib/utils";
 import {
   Code,
+  FileQuestion,
   ImageIcon,
   LayoutDashboard,
   MessageSquare,
-  Speech,
 } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { FreeCounter } from "@/components/free-counter";
@@ -40,13 +40,13 @@ const routes = [
     color: "text-pink-700",
   },
   {
-    label: "Quiz Me",
-    icon: Speech,
+    label: "Quiz Generation",
+    icon: FileQuestion,
     href: "/quiz",
     color: "text-emerald-500",
   },
   {
-    label: "Code Generation",
+    label: "Coding Assistant",
     icon: Code,
     href: "/code",
     color: "text-green-700",
