@@ -71,8 +71,8 @@ const CodePage = () => {
         title="Quiz Generation"
         description="Generate quizes using descriptive text."
         icon={Code}
-        iconColor="text-green-700"
-        bgColor="bg-green-700/10"
+        iconColor="text-orange-700"
+        bgColor="bg-orange-700/10"
       />
       <div className="px-4 lg:px-8 pb-8">
         <div>

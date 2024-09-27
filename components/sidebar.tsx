@@ -43,7 +43,7 @@ const routes = [
     label: "Quiz Generation",
     icon: FileQuestion,
     href: "/quiz",
-    color: "text-emerald-500",
+    color: "text-orange-500",
   },
   {
     label: "Coding Assistant",
