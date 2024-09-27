@@ -11,8 +11,6 @@ import {
   LayoutDashboard,
   MessageSquare,
   Speech,
-  Settings,
-  VideoIcon,
 } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { FreeCounter } from "@/components/free-counter";
@@ -36,21 +34,15 @@ const routes = [
     color: "text-violet-500",
   },
   {
-    label: "Image Generation",
+    label: "Flashcards",
     icon: ImageIcon,
-    href: "/image",
+    href: "/flashcards",
     color: "text-pink-700",
   },
   {
-    label: "Video Generation",
-    icon: VideoIcon,
-    href: "/video",
-    color: "text-orange-700",
-  },
-  {
-    label: "Voice Generation",
+    label: "Quiz Me",
     icon: Speech,
-    href: "/voice",
+    href: "/quiz",
     color: "text-emerald-500",
   },
   {
@@ -58,11 +50,6 @@ const routes = [
     icon: Code,
     href: "/code",
     color: "text-green-700",
-  },
-  {
-    label: "Settings",
-    icon: Settings,
-    href: "/settings",
   },
 ];
 
@@ -80,7 +67,7 @@ const Sidebar = ({ apiLimitCount = 0 }: SidebarProps) => {
             <Image fill alt="logo" src="/logo.png" />
           </div>
           <h1 className={cn("text-2xl font-bold", montserrat.className)}>
-            Genius
+            EduBuddy
           </h1>
         </Link>
         <div className="space-y-1">

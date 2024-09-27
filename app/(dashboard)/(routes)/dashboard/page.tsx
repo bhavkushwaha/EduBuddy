@@ -9,7 +9,6 @@ import {
   ImageIcon,
   MessageSquare,
   Speech,
-  VideoIcon,
 } from "lucide-react";
 
 const tools = [
@@ -21,25 +20,18 @@ const tools = [
     href: "/conversation",
   },
   {
-    label: "Voice Generation",
+    label: "Quiz Me",
     icon: Speech,
     color: "text-emerald-500",
     bgColor: "bg-emerald-500/10",
-    href: "/voice",
+    href: "/quiz",
   },
   {
-    label: "Image Generation",
+    label: "Flashcards",
     icon: ImageIcon,
     color: "text-pink-700",
     bgColor: "bg-pink-700/10",
-    href: "/image",
-  },
-  {
-    label: "Video Generation",
-    icon: VideoIcon,
-    color: "text-orange-700",
-    bgColor: "bg-orange-700/10",
-    href: "/video",
+    href: "/flashcards",
   },
   {
     label: "Code Generation",
@@ -57,10 +49,10 @@ const DashboardPage = () => {
     <div>
       <div className="mb-8 space-y-4 pb-4">
         <h2 className="text-2xl md:text-4xl font-bold text-center">
-          Explore the power of AI
+          EduBuddy
         </h2>
         <p className="text-muted-foreground font-light text-sm md:text-lg text-center">
-          Chat with the smartest AI - Experience the power of AI
+          Chat with the smartest AI - Resolve your queries!
         </p>
 
         <div className="px-4 md:px-20 lg:px-32 space-y-4">

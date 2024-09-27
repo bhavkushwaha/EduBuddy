@@ -6,7 +6,6 @@ import {
   ImageIcon,
   MessageSquare,
   Speech,
-  VideoIcon,
   Zap,
 } from "lucide-react";
 
@@ -32,22 +31,16 @@ const tools = [
     bgColor: "bg-violet-500/10",
   },
   {
-    label: "Voice Generation",
+    label: "Quiz Me",
     icon: Speech,
     color: "text-emerald-500",
     bgColor: "bg-emerald-500/10",
   },
   {
-    label: "Image Generation",
+    label: "Flashcards",
     icon: ImageIcon,
     color: "text-pink-700",
     bgColor: "bg-pink-700/10",
-  },
-  {
-    label: "Video Generation",
-    icon: VideoIcon,
-    color: "text-orange-700",
-    bgColor: "bg-orange-700/10",
   },
   {
     label: "Code Generation",
@@ -66,7 +59,7 @@ export const ProModal = () => {
         <DialogHeader>
           <DialogTitle className="flex justify-center items-center flex-col gap-y-4 pb-2">
             <div className="flex items-center gap-x-2 font-bold py-1">
-              Upgrade to Genius
+              Upgrade to EduBuddy
               <Badge className="uppercase text-sm py-1" variant="premium">
                 pro
               </Badge>
