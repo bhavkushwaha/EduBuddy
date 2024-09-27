@@ -10,6 +10,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { ChatCompletionMessageParam } from "openai/resources/index.mjs";
 import { useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
+import ReactMarkdown from "react-markdown";
 
 import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
@@ -22,7 +23,7 @@ import { UserAvatar } from "@/components/user-avatar";
 import { BotAvatar } from "@/components/bot-avatar";
 import { useProModal } from "@/hooks/use-pro-modal";
 
-const DoubtsSolvePage = () => {
+const DoubtSolvePage = () => {
   const router = useRouter();
 
   const proModal = useProModal();
@@ -67,11 +68,11 @@ const DoubtsSolvePage = () => {
   return (
     <div>
       <Heading
-        title="Doubts Solving"
-        description="Ask EduBuddy your doubts!"
+        title="Doubt Solving"
+        description="Solve your Doubts using descriptive text."
         icon={MessageSquare}
-        iconColor="text-violet-500"
-        bgColor="bg-violet-500/10"
+        iconColor="text-green-700"
+        bgColor="bg-green-700/10"
       />
       <div className="px-4 lg:px-8 pb-8">
         <div>
@@ -88,7 +89,7 @@ const DoubtsSolvePage = () => {
                       <Input
                         className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                         disabled={isLoading}
-                        placeholder="How do I calculate the area of a circle?"
+                        placeholder="Simple Toggle Button using React hooks."
                         {...field}
                       />
                     </FormControl>
@@ -129,7 +130,21 @@ const DoubtsSolvePage = () => {
                 )}
               >
                 {message.role === "user" ? <UserAvatar /> : <BotAvatar />}
-                <p className="text-sm">{String(message.content)}</p>
+                <ReactMarkdown
+                  components={{
+                    pre: ({ node, ...props }) => (
+                      <div className="overflow-auto w-full my-2 bg-black p-2 rounded-lg text-white">
+                        <pre {...props} />
+                      </div>
+                    ),
+                    code: ({ node, ...props }) => (
+                      <code className="bg-black/10 rounded-lg p-2" {...props} />
+                    ),
+                  }}
+                  className="text-sm overflow-hidden leading-7"
+                >
+                  {String(message.content) || ""}
+                </ReactMarkdown>
               </div>
             ))}
           </div>
@@ -139,4 +154,4 @@ const DoubtsSolvePage = () => {
   );
 };
 
-export default DoubtsSolvePage;
+export default DoubtSolvePage;
