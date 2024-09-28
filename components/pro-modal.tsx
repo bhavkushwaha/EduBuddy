@@ -61,7 +61,7 @@ export const ProModal = () => {
             <div className="flex items-center gap-x-2 font-bold py-1 text-3xl text-violet-700">
               INCREASE LIMIT
             </div>
-            <p>Since we're using a paid ChatGPT API,</p>
+            <p>Since we are using a paid ChatGPT API,</p>
             <p>Request for more <span className="text-violet-700">FREE</span> generations </p>
           </DialogTitle>
           <DialogDescription className="text-center pt-2 space-y-2 text-zinc-900 font-medium">
