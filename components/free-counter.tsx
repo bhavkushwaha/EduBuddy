@@ -43,7 +43,7 @@ export const FreeCounter = ({ apiLimitCount = 0 }: FreeCounterProps) => {
             variant="premium"
             onClick={proModal.onOpen}
           >
-            Upgrade
+            Request More
             <Zap className="w-4 h-4 ml-2 fill-white" />
           </Button>
         </CardContent>

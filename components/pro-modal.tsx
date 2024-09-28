@@ -58,12 +58,11 @@ export const ProModal = () => {
       <DialogContent>
         <DialogHeader>
           <DialogTitle className="flex justify-center items-center flex-col gap-y-4 pb-2">
-            <div className="flex items-center gap-x-2 font-bold py-1">
-              Upgrade to EduBuddy
-              <Badge className="uppercase text-sm py-1" variant="premium">
-                pro
-              </Badge>
+            <div className="flex items-center gap-x-2 font-bold py-1 text-3xl text-violet-700">
+              INCREASE LIMIT
             </div>
+            <p>Since we're using a paid ChatGPT API,</p>
+            <p>Request for more <span className="text-violet-700">FREE</span> generations </p>
           </DialogTitle>
           <DialogDescription className="text-center pt-2 space-y-2 text-zinc-900 font-medium">
             {tools.map((tool) => (
@@ -84,7 +83,7 @@ export const ProModal = () => {
         </DialogHeader>
         <DialogFooter>
           <Button size="lg" variant="premium" className="w-full">
-            Upgrade
+            Request More
             <Zap className="w-4 h-4 ml-2 fill-white" />
           </Button>
         </DialogFooter>
