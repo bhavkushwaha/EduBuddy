@@ -49,6 +49,8 @@ Make sure you have the following installed:
     
     # Example .env file
 
+    ```
+
     DB_HOST=localhost
     DB_PORT=5432
     DB_USER=your-username
@@ -62,6 +64,7 @@ Make sure you have the following installed:
     NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY = "your_key"
     CLERK_SECRET_KEY = "your_key"   
 
+    ```
     
 
 ## Usage
@@ -92,7 +95,8 @@ EduBuddy requires certain environment variables to be set for database connectio
 - **Database Configuration**: Modify the `.env` file as needed.
 - **API Keys**: If using third-party APIs for quiz generation or code snippets, add them in the `.env` file (we used OpenAI )
 
-    
+    ```
+
     OPENAI_API_KEY=your-openai-api-key
 
     ```
